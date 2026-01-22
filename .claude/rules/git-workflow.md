@@ -15,6 +15,7 @@
 - Keep messages short (1-5 lines preferred)
 - Types: feat, fix, refactor, chore, docs, build, test
 - Don't commit .claude files(.claude/), output files, install dirs, etc
+- Before committing, ensure regression tests pass
 
 ## Git Branch Convention (IMPORTANT)
 

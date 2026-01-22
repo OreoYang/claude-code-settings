@@ -253,3 +253,17 @@ The `contrib/ivorysql_ora/` extension provides:
 - MERGE statement
 - DBMS_OUTPUT and DBMS_UTILITY packages
 - Oracle XML functions
+
+## CI/CD
+
+- **GitHub Actions**: `.github/workflows/` (build, regression tests, oracle tests)
+- **Cirrus CI**: `.cirrus.yml` (multi-platform, format checking)
+- Workflows run on Ubuntu, FreeBSD, macOS, and Windows
+
+## Key Architecture Notes
+
+1. **Parser Switching**: Automatic parser selection based on database mode
+2. **Package Support**: Native Oracle packages (not just emulation) via `pg_package` catalog
+3. **Extension-Based**: Oracle compatibility features delivered via extension
+4. **Forward-Porting**: Changes applicable to upstream PostgreSQL should be submitted there first
+5. **Test Parallelism**: Both test suites support parallel execution (max 20 concurrent tests by default)
