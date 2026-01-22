@@ -2,6 +2,8 @@
 
 ## Git Commit Policy (MANDATORY)
 
+Before committing, ensure regression tests pass.
+
 **Commit message format:**
 ```
 <type>: <short description>
@@ -10,12 +12,12 @@
 ```
 
 **RULES:**
-- "Generated with Claude Code" footer
-- "Co-Authored-By: Claude" line
+- add Co-Authored-By tag "Co-Authored-By: Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
 - Keep messages short (1-5 lines preferred)
 - Types: feat, fix, refactor, chore, docs, build, test
 - Don't commit .claude files(.claude/), output files, install dirs, etc
-- Before committing, ensure regression tests pass
+- Don't show 'All regression tests passed' in commit message
+
 
 ## Git Branch Convention (IMPORTANT)
 
