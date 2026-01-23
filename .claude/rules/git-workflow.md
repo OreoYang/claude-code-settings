@@ -15,7 +15,7 @@ Before committing, ensure regression tests pass.
 - add Co-Authored-By tag "Co-Authored-By: Co-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>"
 - Keep messages short (1-5 lines preferred)
 - Types: feat, fix, refactor, chore, docs, build, test
-- Don't commit .claude files(.claude/), output files, install dirs, etc
+- Don't commit .claude files(.claude/), output files or install dirs, etc
 - Don't show 'All regression tests passed' in commit message
 
 
