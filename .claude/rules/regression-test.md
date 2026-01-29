@@ -102,4 +102,4 @@ When you need to test SQL manually (e.g., testing PL/iSQL packages):
    bin/pg_ctl -D test_oracle stop -m fast
    ```
 
-**Important:** Always use port **1521** when testing Oracle PL/SQL compatibility features (packages, PL/iSQL procedures, etc.)
+**Note:** WHEN the error says: could not bind IPv4 address "127.0.0.1": Address already in use. Ensure backend process postgres is stopped
